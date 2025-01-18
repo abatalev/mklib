@@ -8,7 +8,7 @@ function setup_mklib() {
             mkdir tools
         fi
         cd tools
-        git clone http://localhost:3000/andrey/mklib.git
+        git clone https://github.com/abatalev/mklib.git
     else 
         cd tools/mklib
         git pull
