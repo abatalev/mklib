@@ -34,7 +34,7 @@ function check_prj2hash() {
 }
 
 DOCKER_BIN=docker
-if [ $USE_PODMAN == 1 ]; then
+if [ "x$USE_PODMAN" == "x1" ]; then
     DOCKER_BIN=podman
 fi
 
