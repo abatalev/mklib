@@ -26,7 +26,9 @@ function check_prj2hash() {
     cd "${CDIR}/tools"
     git clone https://github.com/abatalev/prj2hash.git prj2hash.git
     cd "${CDIR}/tools/prj2hash.git"
-    ./build.sh
+    # ./build.sh
+	go mod tidy
+	go build .
     cd "${CDIR}"
     cp tools/prj2hash.git/prj2hash tools/prj2hash
     rm -Rf ${CDIR}/tools/prj2hash.git/
